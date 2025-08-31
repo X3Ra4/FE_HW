@@ -25,44 +25,53 @@
 
         let noAuth;
 
-        let symb = Symbol('symb')
+        let symb = Symbol('symb');
 
         let obj = {
             phase: '1',
             pattern: '66',
             uniqueness: true,
             data: function() {
-                console.log(this.phase, this.pattern, this.uniqueness)
+                console.log(this.phase, this.pattern, this.uniqueness);
             }
         }
 
-        console.log(num1, typeof num1)
-        console.log(num2, typeof num2)
-        console.log('---------')
-        console.log(bnum, typeof bnum)
-        console.log('---------')
+        console.log(num1, typeof num1);
+        console.log(num2, typeof num2);
+        console.log('---------');
+        console.log(bnum, typeof bnum);
+        console.log('---------');
         console.log(strs, typeof strs)
-        console.log('---------')
-        console.log(BullF, typeof BullF)
-        console.log(BullT, typeof BullT)
-        console.log('---------')
-        console.log(None, typeof None)
-        console.log('---------')
-        console.log(noAuth, typeof noAuth)
-        console.log('---------')
-        console.log(symb, typeof symb)
-        console.log('---------')
-        console.log(obj, typeof obj)
-        console.log('---------')
+        console.log('---------');;
+        console.log(BullF, typeof BullF);
+        console.log(BullT, typeof BullT);
+        console.log('---------');
+        console.log(None, typeof None);
+        console.log('---------');
+        console.log(noAuth, typeof noAuth);
+        console.log('---------');
+        console.log(symb, typeof symb);
+        console.log('---------');
+        console.log(obj, typeof obj);
+        console.log('---------');
         
         ///hw2
-        const data_1 = prompt('Eneter 1st str: ')
-        const data_2 = prompt('Eneter 2nd str: ')
-        const data_3 = prompt('Eneter 3rd str: ')
+        const data_1 = prompt('Eneter 1st str: ');
+        const data_2 = prompt('Eneter 2nd str: ');
+        const data_3 = prompt('Eneter 3rd str: ');
 
-        alert(data_1 + data_2 + data_3)
+        alert(data_1 + data_2 + data_3);
         
+        ///hw3
 
+        const num = 25635;
+        let str_num;
+        for (i in `${num}`) {
+            str_num = str_num + i + ' ';
+        }
+        console.log(str_num.slice(0, -1));
+
+        /// тут вопрос где я не так поступил
         
     </script>
 </body>
