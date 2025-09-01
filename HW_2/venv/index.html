@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //hw1
+        const userNameInput = prompt('Enter your name:');
+        alert(`Hello, ${userNameInput}! How are you?`);
+
+        //hw2
+        const userNumberInput = prompt('Enter your number(exmp 123):');
+        const userNumberPartOne = Number(userNumberInput[0]);
+        const userNumberPartTwo = Number(userNumberInput[1]);
+        const userNumberPartTree = Number(userNumberInput[2]);
+
+        let result = 'Nothing common';
+
+        if (userNumberPartOne == userNumberPartTree == userNumberPartTwo) {
+            result = 'All numbers are equal';
+        } else if (userNumberPartOne == userNumberPartTree) {
+            result = 'First and Third numbers are equal';
+        } else if (userNumberPartOne == userNumberPartTwo) {
+            result = 'First and Second numbers are equal';
+        } else if (userNumberPartTwo == userNumberPartTree) {
+            result = 'Second and Third numbers are equal';
+        }
+
+        console.log(result);
+
+        ///hw3
+        const userAgeInput = prompt('Enter your name:');
+        let userCityInput = prompt('Enter your name:');
+        //userCityInput = userCityInput[0].toUpperCase() + userCityInput.slice(1).toLowerCase();
+        const userSportInput = prompt('Enter your name:');
+        //userSportInput = userSportInput[0].toUpperCase() + userSportInput.slice(1).toLowerCase();
+        
+
+        alert(`Your age is ${userAgeInput}?`);
+        alert(userCityInput == ''? 'Its a pity that you didnt want to enter yours city' : (userCityInput == 'Kiev' || userCityInput == 'London' || userCityInput == 'Tokyo' || userCityInput == 'Paris'|| userCityInput == 'Rome'? `You live in capital ${userCityInput}` : `You live in city ${userCityInput}`));
+        alert(userSportInput == ''? 'Its a pity that you didnt want to enter yours fav sport' : (userSportInput == 'Football' || userSportInput == 'Basketball' || userSportInput == 'Tennis'? `Cool! Do you wanna become pro in ${userSportInput}` : `Your fav sport is ${userSportInput}`));
+
+
+        ///hw4
+        let numOrStr = prompt('input number or string');
+        console.log(numOrStr)
+
+        
+        if (numOrStr === null) {
+            console.log('ви скасували')
+        } else if (numOrStr.trim() === '') {
+            console.log('Empty String');
+        } else if (isNaN(+numOrStr)) {
+            console.log(' number is Ba_NaN')
+        } else {
+            console.log('OK!')
+        }
+
+        switch (true) {
+            case numOrStr === null:
+                console.log('ви скасували');
+                break;
+            case numOrStr.trim() === '':
+                console.log('Empty String');
+                break;
+            case isNaN(+numOrStr):
+                console.log(' number is Ba_NaN')
+                break;
+            default:
+                console.log('OK!')
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
