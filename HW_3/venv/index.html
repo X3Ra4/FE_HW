@@ -8,10 +8,47 @@
 <body>
     
     <script>
+        //hw1
+        for (let i = 20; i <= 30.5; i+=0.5) {
+            console.log(i);
+        }
+        //hw2
+        let count;
+        let courseDollar = 26;
+        for (i = 10; i<= 101; i+=10) {
+            count = count * 26;
+            console.log(count);
+        } 
+        //hw3
+        let userN = prompt('Enter your number:');
+        for (i = 1; i<=100; i++) {
+            if (i**2 > userN) {
+                break;
+            } 
+            console.log(i);
+        }
+        //hw4
+        userN = prompt("Введіть ціле число:");
+        let result = true;
 
+        if (userN <= 1) {
+            result = false;
+        } else {
+            for (let i = 2; i < userN; i++) {
+                if (userN % i === 0) {
+                    result = false;
+                    break;
+                }
+            }
+        }
 
+        if (result) {
+            alert("Просте число");
+        } else {
+            alert("Не просте число");
+        }
 
     </script>
 
 </body>
-</html>s
+</html>
