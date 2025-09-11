@@ -19,6 +19,32 @@
                 console.log(this.username, this.userAge, this.userCity)
             }}          
         authUser.str();
+        
+        //hw2
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const evenNumbers = numbers.filter(num => num % 2 === 0);
+        console.log(evenNumbers);
+
+        //hw3
+        const contactBook = {
+            contacts: [
+                { name: "FredrigLN", phone: "012 345 67 89", email: "FredrigLN@example.com" },
+                { name: "LeonJH", phone: "098 765 43 21", email: "LeonJH@example.com" }
+            ],
+
+            findContact(name) {
+                return this.contacts.find(contact => contact.name === name) || "Контакт не знайдено";
+            },
+
+            addContact(name, phone, email) {
+                this.contacts.push({ name, phone, email });
+                console.log(`Контакт ${name} успішно додано!`);
+            }};
+
+            console.log(contactBook.findContact("LeonJH"));
+            contactBook.addContact("YuriPA", "032 253 12 23", "YuriPA@example.com");
+            console.log(contactBook.contacts);
+
 
     </script>
 
