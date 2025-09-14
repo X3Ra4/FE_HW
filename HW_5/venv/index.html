@@ -8,7 +8,42 @@
 <body>
     
     <script>
+
+        //hw1
+        const userStr = prompt('Enter str:');
+        const userSymbs = prompt('Enter symbs(use space):').split(' ');
         
+        function delSymbs(str, symbs) {
+            return str.split('').filter(symb => !symbs.includes(symb)).join('');
+        }
+        alert(delSymbs(userStr, userSymbs));
+
+        //hw2
+        const inputList = [2,5,7,'',5 ,true, 67, undefined, 14, 1,'', [11111111,333333]];
+
+        function mainValueList (list) {
+            let nums = list.filter(numL => typeof numL == "number");
+            let sumOfNums = 0;
+            let countOfNums = 0;
+            for (let numF of nums) {
+                sumOfNums = sumOfNums + numF;
+                countOfNums ++;
+            }
+            return sumOfNums/countOfNums
+        }
+
+        console.log(mainValueList(inputList));
+
+        //hw3
+        const array = prompt('Enter list of nums(use space):').split(' ');
+        const unneNums = prompt('Enter list of unnecessary nums(use space):').split(' ')
+
+        for (let i of unneNums) {
+            removeElement(array,i);
+        }
+        
+        console.log(array); 
+
     </script>
 
 </body>
