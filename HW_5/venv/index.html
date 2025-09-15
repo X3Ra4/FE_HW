@@ -35,12 +35,13 @@
         console.log(mainValueList(inputList));
 
         //hw3
+        function removeElement(numsList, numEnne) {
+            return numsList.filter(num => !numEnne.includes(num));
+        }
         const array = prompt('Enter list of nums(use space):').split(' ');
         const unneNums = prompt('Enter list of unnecessary nums(use space):').split(' ')
-
-        for (let i of unneNums) {
-            removeElement(array,i);
-        }
+        
+        array = removeElement(array,unneNums);
         
         console.log(array); 
 
