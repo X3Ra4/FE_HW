@@ -6,7 +6,7 @@ messageInput.addEventListener('input', function (event) {
     if (message.length >= 5) {
         messageSpan.innerText = ''
     } else {
-        messageSpan.innerText = 'Номер телефону повинен починатись на +380'
+        messageSpan.innerText = 'Тест має бути більше ніж з 5 символів'
     }
 });
 
