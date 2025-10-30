@@ -18,7 +18,7 @@ phoneInput.addEventListener('input', function (event) {
     if (phoneNumber.startsWith('+380') && phoneNumber.length == 13) {
         phoneSpan.innerText = ''
     } else {
-        phoneSpan.innerText = 'Номер телефону повинен починатись на +380'
+        phoneSpan.innerText = 'Номер телефону повинен починатись на +380 і мати 9 додаткових цифр'
     }
 });
 
