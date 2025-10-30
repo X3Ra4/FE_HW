@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="myForm" action="submit.php" method="post">
+    <h2>We would like to help you</h2>
+
+    <input type="text" id="name" name="Name" placeholder="Name" required />
+
+    <textarea id="message" name="Message" placeholder="Message" minlength="5"></textarea>
+    <span id="controlMessage"></span>
+
+    <div class="sectionTitle">How to answer you?</div>
+
+    <input type="phone" id="phoneNumber" name="Phone number" placeholder="Phone number" required />
+    <span id="controlPhoneNumber"></span>
+
+    <input type="email" id="email" name="Email" placeholder="Email" required />
+    <span id="controlEmail"></span>
+
+    <button type="submit">Send message</button>
+  </form>
+
+    <script src="script.js"></script> 
+</body>
+</html>
